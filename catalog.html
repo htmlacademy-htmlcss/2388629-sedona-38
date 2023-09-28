@@ -51,10 +51,13 @@
         <label class="control" for="Apartments">Апартаменты</label>
         <input class="control-input" id="Apartments" type="radio" name="product-group" value="Apartments">
       </fieldset>
-      <label class="control">Стоимость, ₽:
-        <input class="cost-figure" type="number">0<span class="cost">от</span>
-        <input class="cost-figure" type="number">9000<span class="cost">до</span>
-      </label>
+      <fieldset>
+       <legend class="catalog-filter-titel">Стоимость, ₽:</legend>
+        <label class="control" for="from">от</label>
+        <input class="cost-figure" type="number" id="from" placeholder="0">
+        <label class="control" for="before">до</label>
+        <input class="cost-figure" type="number" id="before" placeholder="9000">
+      </fieldset>
       <button class="button" type="submit">Применить</button>
       <button class="button-off" type="submit">Сбросить</button>
     </form>
@@ -123,7 +126,7 @@
       <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
       <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
       <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
-      <span class="ellipsis">...</span>
+      <li><span class="ellipsis">...</span></li>
       <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
     </ul>
    </section>
