@@ -31,20 +31,19 @@
     </nav>
   </header>
   <main class="main-inner">
-   <h1 class="inner-catalog-titel">Гостиницы Седоны</h1>
-   <img src="images/catalog/filters.png" alt="Каньон" width="1200" height="412">
-   <ul class="breadcrumps">
-    <li class="breadcrumps-item">
-      <a class="breadcrumps-link" href="index.html"><img class="breadcrumps-home" src="images/catalog/icons/vector.svg" alt="Главная страница" width="12" height="12"></a>
+   <h1 class="inner-catalog-title">Гостиницы Седоны</h1>
+   <ul class="breadcrumbs">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-home" src="images/catalog/icons/vector.svg" alt="Главная страница" width="12" height="12"></a>
     </li>
-    <li class="breadcrumps-item"><img src="images/catalog/icons/vector_01.svg" alt="Стрелка" width="6" height="10"></li>
-    <li class="breadcrumps-item"><a class="breadcrumps-link">Гостиницы</a></li>
+    <li class="breadcrumbs-item"><img src="images/catalog/icons/vector_01.svg" alt="Стрелка" width="6" height="10"></li>
+    <li class="breadcrumbs-item"><a class="breadcrumbs-link">Гостиницы</a></li>
    </ul>
    <section data-test="filter" class="filter">
     <h2 class="visually-hidden">Список фильтров</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-titel">Инфраструктура:</legend>
+        <legend class="catalog-filter-title">Инфраструктура:</legend>
         <label class="control" for="pool">Бассейн</label>
         <input class="control-input" id="pool" type="checkbox" name="Бассейн" checked>
         <label class="control" for="parking">Парковка</label>
@@ -53,8 +52,7 @@
         <input class="control-input" id="Wi-Fi" type="checkbox" name="Wi-Fi">
       </fieldset>
       <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-titel">Тип жилья:</legend>
-        <legend class="catalog-filter-titel">Инфраструктура:</legend>
+        <legend class="catalog-filter-title">Тип жилья:</legend>
         <label class="control" for="Hotel">Гостиница</label>
         <input class="control-input" id="Hotel" type="radio" name="product-group" value="Hotel" checked>
         <label class="control" for="Motel">Мотель</label>
@@ -63,7 +61,7 @@
         <input class="control-input" id="Apartments" type="radio" name="product-group" value="Apartments">
       </fieldset>
       <fieldset>
-       <legend class="catalog-filter-titel">Стоимость, ₽:</legend>
+       <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <label class="control" for="from">от</label>
         <input class="cost-figure" type="number" id="from" placeholder="0">
         <label class="control" for="before">до</label>
@@ -76,10 +74,10 @@
     <section>
     <h2 class="advantages-text">Найдено гостиниц:<span class="found">38</span></h2>
     <select class="select-control" aria-label="Сортировка">
-      <option value="expensiv">Сначала дорогое</option>
+      <option value="expensive">Сначала дорогое</option>
       <option value="cheap">Сначала дешёвые</option>
     </select>
-     <a href="#" class="button-light"><span class="visually-hidden">Показать столбцы</span></a>
+     <a href="#" class="button button-light"><span class="visually-hidden">Показать столбцы</span></a>
      <a href="#" class="button-light"><span class="visually-hidden">Показать карточки</span></a>
      <a href="#" class="button-light"><span class="visually-hidden">Показать список</span></a>
      <ul class="product-list">
@@ -92,7 +90,7 @@
       <span class="services-price">От 4000 ₽</span>
       <a class="button-detailed" href="#">подробнее</a>
       <button class="button" href="#">в избранное</button>
-      <p class="stars-4"><img src="images/catalog/stars/звёзды_04.svg" alt="4 звезды" width="140" height="37"><span class="visually-hidden">4 звезды</span></p>
+      <p class="stars-4"><span class="visually-hidden">4 звезды</span></p>
       <p class="rating">Рейтинг:<span class="rating-numbers">8,5</span></p>
      </li>
      <li class="product-card">
@@ -104,7 +102,7 @@
       <span class="services-price">От 5000 ₽</span>
       <a class="button-detailed" href="#">подробнее</a>
       <button class="button-green" href="#">в избранное</button>
-      <p class="stars-4"><img src="images/catalog/stars/звёзды_04.svg" alt="4 звезды" width="140" height="37"><span class="visually-hidden">4 звезды</span></p>
+      <p class="stars-4"><span class="visually-hidden">4 звезды</span></p>
       <p class="rating">Рейтинг:<span class="rating-numbers">9,2</span></p>
      </li>
      <li class="product-card">
@@ -116,7 +114,7 @@
       <span class="services-price">От 2500 ₽</span>
       <a class="button-detailed" href="#">подробнее</a>
       <button class="button" href="#">в избранное</button>
-      <p class="stars-3"><img src="images/catalog/stars/звёзды_03.svg" alt="3 звезды" width="140" height="37"><span class="visually-hidden">3 звезды</span></p>
+      <p class="stars-3"><span class="visually-hidden">3 звезды</span></p>
       <p class="rating">Рейтинг:<span class="rating-numbers">9,2</span></p>
      </li>
      <li class="product-card">
@@ -128,7 +126,7 @@
       <span class="services-price">От 1500 ₽</span>
       <a class="button-detailed" href="#">подробнее</a>
       <button class="button" href="#">в избранное</button>
-      <p class="stars-2"><img src="images/catalog/stars/звёзды_02.svg" alt="2 звезды" width="140" height="37"><span class="visually-hidden">2 звезды</span></p>
+      <p class="stars-2"><span class="visually-hidden">2 звезды</span></p>
       <p class="rating">Рейтинг:<span class="rating-numbers">5,0</span></p>
      </li>
     </ul>
@@ -141,7 +139,7 @@
       <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
     </ul>
    </section>
-  </main>
+<section class="">
   <h3 class="advantages-text">Подпишитесь на рассылку</h3>
   <p class="advantages-application">Только полезная информация и никакого спама, честное бойскаутское!</p>
   <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="podt">
@@ -149,6 +147,8 @@
     <input type="email" id="email" placeholder="Ваш e-mail">
     <button class="subscribe" type="submit"><span class="visually-text">Подписаться</span></button>
   </form>
+</section>
+</main>
   <footer>
     <ul class="footer-social-list">
       <li class="footer-social-item"><img src="images/footer/social.svg" alt="VK" width="24" height="14">
