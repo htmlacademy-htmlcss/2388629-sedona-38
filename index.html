@@ -12,27 +12,38 @@
           <img src="images/header/logo.svg" alt="Логотип городка Седона" width="140" height="70">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link navigation-link-current" href="index.html">Главная</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">О Седане</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седане</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <svg src="images/header/search.svg" role="img" aria-label="Поиск" width="18" height="18"></svg><span class="visually-hidden">Поиск</span>
+            <svg src="images/header/search.svg" role="img" aria-label="Поиск" width="18" height="18"></svg>
+            <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <svg src="images/header/heart.svg" role="img" aria-label="Избранное" width="20" height="20"></svg><span class="visually-hidden">Избранное</span><span class="in-favorites">12</span>
+            <svg src="images/header/heart.svg" role="img" aria-label="Избранное" width="20" height="20"></svg>
+            <span class="visually-hidden">Избранное</span>
+            <span class="in-favorites">12</span>
           </a>
         </li>
-        <li class="navigation-item"><a class="navigation-link" href="#">ХОЧУ СЮДА!</a></li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+        </li>
       </ul>
     </header>
     <main class="main-index">
-    <section>
+    <section class="hero">
      <h1 class="visually-hidden">Седона</h1>
      <img class="logo-header" src="images/index/index-background.jpg" alt="Горы" width="1200" height="485">
      <img src="images/index/welcome.png" alt="Welcome to the Sedona because the grand canyon sucks!" width="458" height="352">
@@ -40,7 +51,6 @@
     <section class="advantages">
      <h2 class="advantages-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="advantages-application">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
          <li class="advantages-item">
           <h3 class="advantages-title">Настоящий городок</h3>
@@ -66,51 +76,63 @@
          </li>
         </ul>
       </section>
-     <h2 class="advantages-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-     <p class="advantages-application">Опытный персонал и качественное обслуживание!</p>
-     <section class="">
-      <ul class="advantages-item">
+     <section class="features">
+      <h2 class="features-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+      <p class="features-application">Опытный персонал и качественное обслуживание!</p>
+      <ul class="features-item">
         <li>
-          <h3 class="advantages-titel-heading">Жильё</h3>
-          <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <h3 class="features-titel-heading">Жильё</h3>
+          <p class="features-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           <svg src="images/index/vector.svg" role="img" aria-label="Дом" width="75" height="72"></svg>
         </li>
         <li>
-          <h3 class="advantages-title-heading">Еда</h3>
-          <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <h3 class="features-title-heading">Еда</h3>
+          <p class="features-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           <svg src="images/index/food.svg" role="img" aria-label="Бургер" width="75" height="72"></svg>
         </li>
         <li>
-          <h3 class="advantages-title-heading">Сувениры</h3>
-          <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+          <h3 class="features-title-heading">Сувениры</h3>
+          <p class="features-description">Не только китайского, но и настоящего местного производства!</p>
           <svg src="images/index/vector_01.svg" role="img" aria-label="Подарок" width="75" height="72"></svg>
         </li>
       </ul>
-      <h2 class="advantages-text">Заинтересовались?</h2>
-      <p class="advantages-application">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+     </section>
+     <section class="search">
+      <h2 class="search-text">Заинтересовались?</h2>
+      <p class="search-application">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="button" type="submit">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
      </section>
-    <section class="">
-    <img class="logo-footer" src="images/index/subscribe.jpg" alt="Гора" width="1200" height="415">
-    <h3 class="advantages-text">Подпишитесь на рассылку</h3>
-    <p class="advantages-application">Только полезная информация и никакого спама, честное бойскаутское!</p>
-  <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="podt">
+  <section class="subscription">
+    <h2 class="subscription-header">Подпишитесь на рассылку</h2>
+    <p class="subscription-application">Только полезная информация и никакого спама, честное бойскаутское!</p>
+   <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="podt">
     <label class="visually-hidden" for="email" >Email</label>
     <input type="email" id="email" placeholder="Ваш e-mail" name="e-mail" required>
-    <button class="subscribe" type="submit"><span class="visually-text">Подписаться</span></button>
-  </form>
-</section>
+    <button class="subscribe" type="submit">
+      <span class="visually-text">Подписаться</span>
+    </button>
+   </form>
+  </section>
     </main>
     <footer class="page-footer">
     <ul class="footer-social-list">
-      <li class="footer-social-item"><img src="images/footer/social.svg" alt="VK" width="24" height="14">
-        <a class="feedback" href=" https://vk.com/htmlacademy"><span class="visually-hidden">VK</span></a>
+      <li class="footer-social-item">
+        <svg src="images/footer/social.svg" role="img" aria-label="VK" width="24" height="14"></svg>
+        <a class="feedback" href=" https://vk.com/htmlacademy">
+          <span class="visually-hidden">VK</span>
+        </a>
       </li>
-      <li class="footer-social-item"><img src="images/footer/social_01.svg" alt="TG" width="18" height="16">
-        <a class="feedback" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+      <li class="footer-social-item">
+        <svg src="images/footer/social_01.svg" role="img" aria-label="TG" width="18" height="16"></svg>
+        <a class="feedback" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Telegram</span>
+        </a>
       </li>
-      <li class="footer-social-item"><img src="images/footer/social_02.svg" alt="youtube" width="22" height="17">
-        <a class="feedback" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
+      <li class="footer-social-item">
+        <svg src="images/footer/social_02.svg" role="img" aria-label="youtube" width="22" height="17"></svg>
+        <a class="feedback" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">youtube</span>
+        </a>
       </li>
     </ul>
     <address>

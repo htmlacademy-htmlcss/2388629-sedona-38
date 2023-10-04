@@ -13,20 +13,33 @@
         <img src="images/header/logo.svg" alt="Логотип сайта городка Седона" width="140" height="70">
       </a>
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">О Седане</a></li>
-        <li class="navigation-item"><a class="navigation-link navigation-link-current" href="#">Гостиницы</a></li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седане</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+        </li>
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#"><svg src="images/header/search.svg" role="img" aria-label="Поиск" width="18" height="18"></svg><span class="visually-hidden">Поиск</span></a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#"><svg src="images/header/heart.svg" role="img" aria-label="Избранное" width="20" height="20"></svg>
-            <span class="visually-hidden">Избранное</span><span class="changes">12</span>
+          <a class="navigation-link" href="#">
+            <svg src="images/header/search.svg" role="img" aria-label="Поиск" width="18" height="18"></svg>
+            <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation-item"><a class="navigation-link" href="#">ХОЧУ СЮДА!</a></li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <svg src="images/header/heart.svg" role="img" aria-label="Избранное" width="20" height="20"></svg>
+            <span class="visually-hidden">Избранное</span>
+            <span class="changes">12</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -34,10 +47,16 @@
    <h1 class="inner-catalog-title">Гостиницы Седоны</h1>
    <ul class="breadcrumbs">
     <li class="breadcrumbs-item">
-      <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-home" src="images/catalog/icons/vector.svg" alt="Главная страница" width="12" height="12"></a>
+      <a class="breadcrumbs-link" href="index.html">
+        <img class="breadcrumbs-home" src="images/catalog/icons/vector.svg" alt="Главная страница" width="12" height="12">
+      </a>
     </li>
-    <li class="breadcrumbs-item"><img src="images/catalog/icons/vector_01.svg" alt="Стрелка" width="6" height="10"></li>
-    <li class="breadcrumbs-item"><a class="breadcrumbs-link">Гостиницы</a></li>
+    <li class="breadcrumbs-item">
+      <img src="images/catalog/icons/vector_01.svg" alt="Стрелка" width="6" height="10">
+    </li>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link">Гостиницы</a>
+    </li>
    </ul>
    <section data-test="filter" class="filter">
     <h2 class="visually-hidden">Список фильтров</h2>
@@ -77,14 +96,22 @@
       <option value="expensive">Сначала дорогое</option>
       <option value="cheap">Сначала дешёвые</option>
     </select>
-     <a href="#" class="button button-light"><span class="visually-hidden">Показать столбцы</span></a>
-     <a href="#" class="button-light"><span class="visually-hidden">Показать карточки</span></a>
-     <a href="#" class="button-light"><span class="visually-hidden">Показать список</span></a>
+     <a href="#" class="button-light">
+      <span class="visually-hidden">Показать столбцы</span>
+    </a>
+     <a href="#" class="button-light">
+      <span class="visually-hidden">Показать карточки</span>
+    </a>
+     <a href="#" class="button-light">
+      <span class="visually-hidden">Показать список</span>
+    </a>
      <ul class="product-list">
      <li class="product-card">
-      <a class="product-card-link" href="#">
+      <a class="product-card-link-picture" href="#">
         <img src="images/catalog/hotel/hotel-1.jpg" alt="Звездное небо" width="300" height="212">
-        <h3 class="product-card-titel">Amara Resort & Spa</h3>
+      </a>
+      <a class="product-card-link-header" href="#">
+        <h3 class="product-card-title">Amara Resort & Spa</h3>
       </a>
       <span class="services">Гостиница</span>
       <span class="services-price">От 4000 ₽</span>
@@ -94,9 +121,11 @@
       <p class="rating">Рейтинг:<span class="rating-numbers">8,5</span></p>
      </li>
      <li class="product-card">
-      <a class="product-card-link" href="#">
-        <img src="images/catalog/hotel/hotel-2.jpg" alt="Каньон в дождливую погоду" width="300" height="212">
-        <h3 class="product-card-titel">Villas at Poco Diablo</h3>
+      <a class="product-card-link-picture" href="#">
+      <img src="images/catalog/hotel/hotel-2.jpg" alt="Каньон в дождливую погоду" width="300" height="212">
+    </a>
+      <a class="product-card-link-header" href="#">
+        <h3 class="product-card-title">Villas at Poco Diablo</h3>
       </a>
       <span class="services">Гостиница</span>
       <span class="services-price">От 5000 ₽</span>
@@ -106,9 +135,11 @@
       <p class="rating">Рейтинг:<span class="rating-numbers">9,2</span></p>
      </li>
      <li class="product-card">
-      <a class="product-card-link" href="#">
+      <a class="product-card-link-picture" href="#">
         <img src="images/catalog/hotel/hotel-3.jpg" alt="Каньон в солнечную погоду" width="300" height="212">
-        <h3 class="product-card-titel">Desert Quail Inn</h3>
+      </a>
+      <a class="product-card-link-header" href="#">
+        <h3 class="product-card-title">Desert Quail Inn</h3>
       </a>
       <span class="services">Гостиница</span>
       <span class="services-price">От 2500 ₽</span>
@@ -118,9 +149,11 @@
       <p class="rating">Рейтинг:<span class="rating-numbers">9,2</span></p>
      </li>
      <li class="product-card">
-      <a class="product-card-link" href="#">
+      <a class="product-card-link-picture" href="#">
         <img src="images/catalog/hotel/hotel-4.jpg" alt="Каньон ночью" width="300" height="212">
-        <h3 class="product-card-titel">GreenTree Inn</h3>
+      </a>
+      <a class="product-card-link-header" href="#">
+        <h3 class="product-card-title">GreenTree Inn</h3>
       </a>
       <span class="services">Гостиница</span>
       <span class="services-price">От 1500 ₽</span>
@@ -149,18 +182,27 @@
   </form>
 </section>
 </main>
-  <footer>
-    <ul class="footer-social-list">
-      <li class="footer-social-item"><img src="images/footer/social.svg" alt="VK" width="24" height="14">
-        <a class="feedback" href=" https://vk.com/htmlacademy"><span class="visually-hidden">VK</span></a>
-      </li>
-      <li class="footer-social-item"><img src="images/footer/social_01.svg" alt="TG" width="18" height="16">
-        <a class="feedback" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
-      </li>
-      <li class="footer-social-item"><img src="images/footer/social_02.svg" alt="youtube" width="22" height="17">
-        <a class="feedback" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
-      </li>
-    </ul>
+<footer class="page-footer">
+  <ul class="footer-social-list">
+    <li class="footer-social-item">
+      <svg src="images/footer/social.svg" role="img" aria-label="VK" width="24" height="14"></svg>
+      <a class="feedback" href=" https://vk.com/htmlacademy">
+        <span class="visually-hidden">VK</span>
+      </a>
+    </li>
+    <li class="footer-social-item">
+      <svg src="images/footer/social_01.svg" role="img" aria-label="TG" width="18" height="16"></svg>
+      <a class="feedback" href="https://t.me/htmlacademy">
+        <span class="visually-hidden">Telegram</span>
+      </a>
+    </li>
+    <li class="footer-social-item">
+      <svg src="images/footer/social_02.svg" role="img" aria-label="youtube" width="22" height="17"></svg>
+      <a class="feedback" href="https://www.youtube.com/user/htmlacademyru">
+        <span class="visually-hidden">youtube</span>
+      </a>
+    </li>
+  </ul>
     <address>
       <a class="Number" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </address>
