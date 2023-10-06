@@ -24,10 +24,19 @@ body {
 
 .page-header {
   background: #ffffff;
-  columns: #000000;
+  color: #000000;
 }
 
 .navigation-link {
   line-height: 24px;
   font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.logo-header {
+  background-size: 100% auto;
 }
