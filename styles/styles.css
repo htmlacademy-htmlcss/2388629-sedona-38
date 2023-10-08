@@ -27,6 +27,7 @@ body {
   color: #000000;
 }
 
+
 .navigation-link {
   line-height: 24px;
   font-size: 20px;
@@ -37,13 +38,32 @@ body {
   text-decoration: none;
 }
 
+.main-index {
+  background-image: url("../images/index/index-background.jpg");
+  color: #000000;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.logo-inscription {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  padding-left: 371px;
+  padding-right: 371px;
+}
+
+.visually-hidden {
+  font-size: 0;
+}
+
 .advantages-text {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  padding-top: 69px;
-  padding-bottom: 25px;
-  margin: 0;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -57,19 +77,13 @@ body {
   font-weight: 400;
 }
 
+.advantages-list {
+  padding: 103px 85px;
+}
+
 .picture {
   background-color: #82B3D3;
   display: flex;
-  text-align: center;
-}
-
-.img-fon {
-  display: flex;
-}
-
-.img-fon-two {
-  display: block;
-  text-align: right;
 }
 
 .picture-icons {
@@ -90,18 +104,7 @@ body {
   line-height: 40px;
 }
 
-.page-footer {
-  padding-right: 70px;
-  padding-bottom: 30px;
-  padding-top: 40px;
-  margin: 0;
-}
-
 .logo {
   text-align: right;
-  display: block;
-}
-
-.footer-social-list {
   display: block;
 }
