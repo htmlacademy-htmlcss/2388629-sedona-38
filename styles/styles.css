@@ -29,7 +29,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   color: #000000;
 }
 
@@ -61,7 +61,8 @@ ul {
   color: #000000;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .logo-inscription {
@@ -182,7 +183,8 @@ ul {
   color: #ffffff;
   background-color: #000000;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
@@ -245,7 +247,8 @@ ul {
   color: #ffffff;
   background-color: #000000;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .inner-catalog-title {
