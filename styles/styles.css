@@ -15,7 +15,8 @@
 }
 
 *,
-*::before *::after {
+*::before
+*::after {
   box-sizing: border-box;
 }
 
@@ -36,7 +37,7 @@ body {
 
 }
 
-main {
+.main-index {
   background-color: #ffffff;
   margin: 0;
   padding-top: 0;
@@ -52,10 +53,6 @@ main {
   background-color: #ffffff;
 }
 
-ul {
-  list-style: none;
-}
-
 .page-header {
   background-color: #ffffff;
   color: #000000;
@@ -68,6 +65,7 @@ ul {
   font-weight: 700;
   background-color: #ffffff;
   text-decoration: none;
+  list-style: none;
 }
 
 .navigation-user {
@@ -148,6 +146,7 @@ ul {
 
 .advantages-list {
   padding: 0;
+  list-style: none;
 }
 
 .advantages-title-heading {
@@ -217,6 +216,7 @@ ul {
 }
 
 .features-item {
+  list-style: none;
   padding: 0;
 }
 
@@ -314,6 +314,7 @@ ul {
 
 .footer-social-list {
   margin: 0;
+  list-style: none;
 }
 
 .number {
@@ -393,6 +394,10 @@ ul {
   font-weight: 400;
 }
 
+.product-list {
+  list-style: none;
+}
+
 .product-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -450,6 +455,7 @@ ul {
 .pagination {
   margin: 8px;
   display: inline-block;
+  list-style: none;
 }
 
 .pagination-item {
