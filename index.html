@@ -10,46 +10,47 @@
   <body>
     <div class="page-container">
       <header class="page-header">
+
         <nav class="navigation">
           <a class="main-header-logo">
             <img src="images/header/logo.svg" alt="Логотип городка Седона" width="140" height="70">
           </a>
-          <ul class="navigation-list">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О Седане</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+        </nav>
+          <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#000"
+                    d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
+                </svg>
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седане</a>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#000"
+                    d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
+                <span class="visually-hidden">Избранное</span>
+                <span class="in-favorites">12</span>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="button navigation-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
-        </nav>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
-                <path fill="#000"
-                  d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
-              </svg>
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
-                <path fill="#000"
-                  d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
-              </svg>
-              <span class="visually-hidden">Избранное</span>
-              <span class="in-favorites">12</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button navigation-link" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
       </header>
       <main class="main-index">
         <section class="hero">
@@ -101,7 +102,7 @@
         </section>
         <section class="features">
           <div class="comfort">
-            <h2 class="features-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <h2 class="features-text">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
             <p class="features-application">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="features-item">
@@ -146,7 +147,7 @@
           <div class="search-interest-container">
             <div class="search-interest">
               <h2 class="search-text">Заинтересовались?</h2>
-              <p class="search-application">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
+              <p class="search-application">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
                 гостиниц
                 в Седоне</p>
             </div>
@@ -157,7 +158,7 @@
           <div class="subscription-gag">
             <div class="subscription-gag-cask">
               <h2 class="subscription-header">Подпишитесь на рассылку</h2>
-              <p class="subscription-application">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <p class="subscription-application">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
             </div>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="podt">
               <label class="visually-hidden" for="email">Email</label>
