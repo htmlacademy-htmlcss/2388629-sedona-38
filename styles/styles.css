@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-*,
 *::before *::after {
   box-sizing: border-box;
 }
@@ -209,8 +208,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 103px 85px;
-  max-width: 230px;
-  max-height: 181px;
+  min-width: 230px;
+  min-height: 181px;
 }
 
 .picture-right {
@@ -222,8 +221,8 @@ body {
   align-items: center;
   margin: 0;
   padding: 103px 85px;
-  max-width: 230px;
-  max-height: 181px;
+  min-width: 230px;
+  min-height: 181px;
 }
 
 .img-fon-big {
