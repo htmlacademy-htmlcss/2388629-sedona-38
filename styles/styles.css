@@ -172,7 +172,6 @@ body {
 .container-advantages {
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
 }
 
@@ -189,7 +188,6 @@ body {
   text-align: center;
   max-width: 175px;
   max-height: 56px;
-  align-items: center;
   margin: 0;
 }
 
@@ -209,6 +207,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 103px 85px;
   max-width: 230px;
   max-height: 181px;
@@ -225,10 +224,6 @@ body {
   padding: 103px 85px;
   max-width: 230px;
   max-height: 181px;
-}
-
-.img-fon {
-  /* width: 100%; */
 }
 
 .img-fon-big {
@@ -479,11 +474,6 @@ body {
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
-}
-
-.number-tel {
-  /* display: flex;
-  justify-content: space-evenly; */
 }
 
 .feedback {
