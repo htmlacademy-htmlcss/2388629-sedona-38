@@ -123,6 +123,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 25px;
+  margin: 0;
 }
 
 .advantages-text {
@@ -205,8 +206,8 @@ body {
   background-color: #82B3D3;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 103px 85px;
   min-width: 230px;
   min-height: 181px;
@@ -218,23 +219,14 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: center;
   margin: 0;
   padding: 103px 85px;
   min-width: 230px;
   min-height: 181px;
 }
 
-.img-fon-big {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-}
-
-.fon-big {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.img-fon {
+  padding: 0;
 }
 
 .img-fon-two {
