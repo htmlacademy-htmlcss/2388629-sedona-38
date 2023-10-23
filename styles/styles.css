@@ -699,7 +699,8 @@ body {
 
 .product-list {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   margin: 0;
   gap: 20px;
   padding: 0;
@@ -715,13 +716,14 @@ body {
   border-radius: 4px;
   padding: 20px;
   gap: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px 1fr;
 }
 
 .product-card-link-picture {
   display: flex;
+  grid-column: span 2;
 }
 
 .product-card-title {
@@ -734,16 +736,20 @@ body {
 
 .product-card-link-header {
   text-decoration: none;
+  text-align: start;
+  grid-column: span 2;
 }
 
 .services-text {
   display: flex;
   justify-content: space-between;
+  grid-column: span 2;
 }
 
 .snap {
   display: flex;
   justify-content: space-between;
+  grid-column: span 2;
 }
 
 .services {
@@ -792,6 +798,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-column: span 2;
 }
 
 .stars {
