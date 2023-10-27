@@ -85,6 +85,7 @@ body {
 .main-header-logo {
   width: 140px;
   max-height: 70px;
+  display: block;
 }
 
 .navigation-list {
@@ -104,9 +105,24 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  bottom: -21px;
+  height: 2px;
+  background-color: #756257;
+  left: 0;
+  right: 0;
+}
+
 .search-favourites {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .in-favorites {
@@ -121,8 +137,8 @@ body {
   height: 20px;
   position: absolute;
   text-align: center;
-  top: 13px;
-  right: 584px;
+  top: -8px;
+  right: -9px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -157,7 +173,10 @@ body {
 .logo-inscription {
   text-align: center;
   display: flex;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 52px;
+  margin-bottom: 82px;
 }
 
 .visually-hidden {
@@ -173,6 +192,7 @@ body {
   text-align: center;
   gap: 25px;
   margin: 0;
+  margin-bottom: 21px;
 }
 
 .advantages-text {
@@ -247,16 +267,28 @@ body {
   width: 175px;
   min-height: 56px;
   margin: 0;
+  padding-bottom: 30px;
+  position: relative;
 }
 
-.line-black {
+.advantages-title-heading::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.30);
+  left: 58px;
+  right: 57px;
+}
+
+/* .line-black {
   background: rgba(0, 0, 0, 0.30);
   width: 60px;
   height: 2px;
   gap: 30px;
   display: flex;
   margin: 0;
-}
+} */
 
 .advantages-title {
   font-size: 24px;
@@ -267,6 +299,18 @@ body {
   width: 175px;
   min-height: 56px;
   margin: 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.30);;
+  height: 2px;
+  bottom: 0;
+  left: 58px;
+  right: 57px;
 }
 
 .line {
@@ -405,6 +449,10 @@ body {
   gap: 40px;
 }
 
+.hotel {
+  padding: 96px 304px;
+}
+
 .search-card {
   display: flex;
   justify-content: space-between;
@@ -516,8 +564,8 @@ body {
   border: 0;
   border-radius: 4px 0 0 4px;
   background-color: #F2F2F2;
-  min-width: 412px;
-  min-height: 28px;
+  min-width: 452px;
+  min-height: 52px;
   padding: 12px 20px;
 }
 
@@ -537,6 +585,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
   border: 1px solid #82B3D3;
@@ -706,7 +755,8 @@ body {
   padding: 0;
   width: 1060px;
   min-height: 438px;
-  flex-wrap: wrap;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .product-card {
@@ -810,12 +860,6 @@ body {
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-}
-
-.line-catalog {
-  width: 1060px;
-  height: 1px;
-  background: #E6E6E6;
 }
 
 .pagination {
