@@ -71,7 +71,6 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 1200px;
-  max-height: 64px;
 }
 
 .navigation {
@@ -84,16 +83,19 @@ body {
 
 .main-header-logo {
   width: 140px;
-  max-height: 70px;
+  height: 70px;
   display: block;
+  margin-bottom: -6px;
 }
 
 .navigation-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+  width: 622px;
+  flex-wrap: wrap;
 }
 
 .navigation-link {
@@ -137,8 +139,8 @@ body {
   height: 20px;
   position: absolute;
   text-align: center;
-  top: -8px;
-  right: -9px;
+  top: -9px;
+  right: -8px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -146,6 +148,7 @@ body {
 
 .navigation-user {
   display: flex;
+  flex-wrap: nowrap;
   padding-right: 70px;
 }
 
@@ -156,7 +159,12 @@ body {
 }
 
 .navigation-items {
-  padding: 22px 12px;
+  padding: 0 12px;
+}
+
+.navigation-items:nth-child(3) {
+  padding-right: 0;
+  padding-left: 20px;
 }
 
 .hero {
@@ -175,12 +183,20 @@ body {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 52px;
   margin-bottom: 82px;
+  padding-top: 51px;
 }
 
 .visually-hidden {
-  font-size: 0;
+  /* font-size: 0; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-text-heading {
@@ -201,12 +217,15 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: flex;
-  flex-direction: row;
   align-items: center;
   text-align: center;
   margin: 0;
   width: 620px;
   min-height: 72px;
+}
+
+.found {
+  padding-left: 7px;
 }
 
 .sorting {
@@ -250,7 +269,7 @@ body {
 
 .advantages-list {
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
 }
 
@@ -306,7 +325,8 @@ body {
 .advantages-title::after {
   content: "";
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.30);;
+  background-color: rgba(255, 255, 255, 0.30);
+  ;
   height: 2px;
   bottom: 0;
   left: 58px;
@@ -352,8 +372,8 @@ body {
   gap: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .charms {
@@ -369,8 +389,8 @@ body {
   gap: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .service-provider {
@@ -411,7 +431,7 @@ body {
 }
 
 .features-item {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: flex-start;
@@ -499,6 +519,10 @@ body {
   width: 160px;
   min-height: 36px;
   justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  align-items: center
 }
 
 .subscription {
@@ -571,6 +595,10 @@ body {
 
 .subscription-header {
   margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .subscription-application {
@@ -599,18 +627,13 @@ body {
 }
 
 .footer-social-list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
-}
-
-.footer-social-item {
-  /* padding-left: 10px;
-  padding-right: 10px; */
 }
 
 .number {
@@ -685,7 +708,7 @@ body {
 }
 
 .breadcrumbs {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -746,8 +769,12 @@ body {
   gap: 8px;
 }
 
+.button-cards {
+  border: 2px solid #000000;
+}
+
 .product-list {
-  list-style: none;
+  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   margin: 0;
@@ -834,6 +861,8 @@ body {
   color: #ffffff;
   border: 1px solid #82B3D3;
   border-radius: 4px;
+  width: 140px;
+  min-height: 36px;
 }
 
 .button-green {
@@ -867,7 +896,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: row;
-  list-style: none;
+  list-style-type: none;
   gap: 8px;
 }
 
