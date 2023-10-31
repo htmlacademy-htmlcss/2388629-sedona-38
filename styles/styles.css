@@ -139,7 +139,7 @@ body {
   height: 20px;
   position: absolute;
   text-align: center;
-  top: -9px;
+  top: -11px;
   right: -8px;
   display: flex;
   justify-content: space-around;
@@ -707,6 +707,15 @@ body {
   display: flex;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  border: 0 none;
+  padding-right: 70px;
+}
+
 .breadcrumbs {
   list-style-type: none;
   display: flex;
@@ -714,12 +723,28 @@ body {
   gap: 10px;
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
 }
 
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding-bottom: 32px;
+  margin: 0;
+}
+
+.flex-pagination {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-direction: row-reverse;
+  padding-bottom: 16px;
+}
+
+.flex-pagination:nth-child(4) {
+  padding-bottom: 0;
 }
 
 .control {
@@ -728,12 +753,20 @@ body {
   font-weight: 400;
 }
 
+.control-input {
+  width: 20px;
+  max-height: 20px;
+}
+
 .button-off {
   background-color: transparent;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   border: 0;
+  min-width: 191px;
+  max-height: 36px;
+  text-transform: uppercase;
 }
 
 .button-light {
@@ -753,6 +786,9 @@ body {
   line-height: 20px;
   font-weight: 700;
   border-radius: 4px;
+  min-width: 191px;
+  max-height: 36px;
+  text-transform: uppercase;
 }
 
 .select-control {
