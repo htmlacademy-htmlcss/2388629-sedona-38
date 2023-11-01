@@ -108,13 +108,19 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label class="control" for="from">от</label>
-              <input class="cost-figure" type="number" id="from" placeholder="0">
-              <label class="control" for="before">до</label>
-              <input class="cost-figure" type="number" id="before" placeholder="9000">
+              <div class="price">
+                <label class="control" for="from">от</label>
+                <input class="cost-figure" type="number" id="from" placeholder="0">
+              </div>
+              <div class="price">
+                <label class="control" for="before">до</label>
+                <input class="cost-figure" type="number" id="before" placeholder="9000">
+              </div>
             </fieldset>
-            <button class="button subscribe  apply" type="submit">Применить</button>
-            <button class="button button-off" type="reset">Сбросить</button>
+            <div class="btn">
+              <button class="button subscribe  apply" type="submit">Применить</button>
+              <button class="button button-off" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
         <section class="search">
@@ -265,7 +271,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item"><a class="pagination-link-item">1</a></li>
-            <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#"><span class="numbering">2</span></a></li>
             <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
             <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
             <li><span class="ellipsis">...</span></li>
