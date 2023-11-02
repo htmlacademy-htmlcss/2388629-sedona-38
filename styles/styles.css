@@ -879,6 +879,15 @@ body {
   padding: 0;
 }
 
+.button-off:hover,
+.button-off:focus {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.button-off:active {
+  color: rgba(255, 255, 255, 0.40);
+}
+
 .button-light {
   text-decoration: none;
   border-radius: 4px;
@@ -926,6 +935,16 @@ body {
   text-transform: uppercase;
   margin-top: 59px;
   padding: 0;
+}
+
+.apply:hover,
+.apply:focus {
+  background-color: #5686a7;
+}
+
+.apply:active {
+  color: #82B3D3;
+  opacity: 0.7;
 }
 
 .select-control {
