@@ -108,9 +108,11 @@ body {
   text-decoration: none;
 }
 
-/* .navigation-link:focus {
-  color: ;
-} */
+.navigation-link:focus,
+.navigation-link:hover {
+  color: #000000;
+  opacity: 0.5;
+}
 
 .navigation-link-current {
   position: relative;
@@ -321,7 +323,6 @@ body {
   content: "";
   position: absolute;
   background-color: rgba(255, 255, 255, 0.30);
-  ;
   height: 2px;
   bottom: 0;
   left: 58px;
@@ -472,6 +473,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1060px;
+  max-height: 49px;
 }
 
 .search-text {
@@ -518,6 +521,16 @@ body {
   font-weight: 700;
   line-height: 20px;
   align-items: center
+}
+
+.come-here:hover,
+.come-here:focus {
+  background-color: #57463d;
+}
+
+.come-here:active {
+  opacity: 0.5;
+  color: #756157;
 }
 
 .subscription {
@@ -646,6 +659,10 @@ body {
   color: #756157;
 }
 
+.number:active {
+  color: var(--texts-active, rgba(117, 97, 87, 0.30));
+}
+
 .feedback {
   display: flex;
   flex-wrap: wrap;
@@ -659,10 +676,15 @@ body {
   height: 40px;
 }
 
-/* .feedback:hover,
-.feedback:focus {
-  color: #68A2CA;
-} */
+.feedback:hover path,
+.feedback:focus path {
+  fill: #68A2CA;
+}
+
+.feedback:active path {
+  fill: #68A2CA;
+  fill-opacity: 0.3;
+}
 
 .logo {
   margin: 0;
@@ -670,9 +692,14 @@ body {
   flex-direction: column;
 }
 
-.logo:hover,
-.logo:focus {
-  color: #756157;
+.logo:hover path,
+.logo:focus path {
+  fill: #756157;
+}
+
+.logo:active path {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
 .logo-html {
@@ -733,6 +760,12 @@ body {
   border: 0 none;
   padding: 0;
   padding-right: 70px;
+  margin: 0;
+}
+
+.cost {
+  display: flex;
+  margin-left: 84px;
 }
 
 .breadcrumbs {
@@ -753,6 +786,10 @@ body {
   margin: 0;
 }
 
+/* .subject {
+  margin-left: 15px;
+} */
+
 .flex-pagination {
   display: flex;
   flex-wrap: nowrap;
@@ -766,6 +803,28 @@ body {
   padding-bottom: 0;
 }
 
+.flex-pagination:hover {
+  opacity: 0.6;
+}
+
+.flex-pagination:active {
+  opacity: 0.3;
+}
+
+.price {
+  display: flex;
+  width: 143px;
+  max-height: 48px;
+}
+
+.cost-figure:focus {
+  border: 3px solid #83B3D3;
+}
+
+.box {
+  margin-right: 2px;
+}
+
 .control {
   font-size: 18px;
   line-height: 23px;
@@ -775,6 +834,37 @@ body {
 .control-input {
   width: 20px;
   max-height: 20px;
+  margin: 0;
+}
+
+.row {
+  position: relative;
+  z-index: 2;
+  top: 14px;
+  right: -104px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 24px;
+  max-height: 24px;
+  color: rgb(171, 182, 191);
+}
+
+.cost-figure {
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #F2F2F2;
+  width: 143px;
+  min-height: 48px;
+  position: absolute;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.figure {
+  border-radius: 4px 0 0 4px;
 }
 
 .button-off {
@@ -801,12 +891,20 @@ body {
   align-items: center;
 }
 
-.button-light:focus {
-  color: #68A2CA;
+
+.button-light:active {
+  border-radius: 4px;
+  border: 2px solid #83B3D3;
 }
 
 .button-light:hover {
-  color: #000000;
+  border-radius: 4px;
+  border: 2px solid #000000;
+}
+
+.button-light:focus {
+  border-radius: 4px;
+  border: 2px solid #000000;
 }
 
 .btn {
@@ -815,6 +913,7 @@ body {
   width: 191px;
   min-height: 104px;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .apply {
@@ -836,6 +935,15 @@ body {
   width: 292px;
   max-height: 49px;
   padding: 14px 20px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  appearance: none
+}
+
+.select-control:focus,
+.select-control:hover {
+  border-radius: 4px;
+  border: 2px solid #68A2CA;
 }
 
 .cards {
@@ -843,9 +951,9 @@ body {
   gap: 8px;
 }
 
-.button-cards {
+/* .button-cards {
   border: 2px solid #000000;
-}
+} */
 
 .product-list {
   list-style-type: none;
@@ -987,7 +1095,14 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-transform: uppercase;
   margin: 0;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  width: 140px;
+  min-height: 37px;
+  padding: 9px 22px 8px 23px;
 }
 
 .pagination {
@@ -1022,7 +1137,11 @@ body {
 
 .pagination-link:hover,
 .pagination-link:focus {
-  color: #68A2CA;
+  background: var(--buttons-blue-hover, #68A2CA);
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .ellipsis {
