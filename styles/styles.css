@@ -227,7 +227,7 @@ body {
   text-align: center;
   margin: 0;
   width: 620px;
-  min-height: 72px;
+  min-height: 49px;
 }
 
 .found {
@@ -512,6 +512,16 @@ body {
   min-height: 52px;
 }
 
+.button-hotel:hover,
+.button-hotel:focus {
+  background-color: #4e3e36;
+}
+
+.button-hotel:active {
+  color: #756157;
+  opacity: 0.5;
+}
+
 .come-here {
   display: flex;
   width: 160px;
@@ -523,15 +533,15 @@ body {
   align-items: center
 }
 
-/* .come-here:hover,
-.come-here:focus {
+.navigation-link.come-here:hover,
+.navigation-link.come-here:focus {
   background-color: #57463d;
 }
 
-.come-here:active {
+.navigation-link.come-here:active {
   opacity: 0.5;
-  color: #FFFFFF;
-} */
+  color: #756157;
+}
 
 .subscription {
   background-image: url("../images/index/Subscribe.jpg");
@@ -628,6 +638,16 @@ body {
   border-radius: 0 4px 4px 0;
   width: 232px;
   min-height: 52px;
+}
+
+.subscribe:hover,
+.subscribe:focus {
+  background-color: #5686a7;
+}
+
+.subscribe:active {
+  color: #82B3D3;
+  opacity: 0.5;
 }
 
 .newsletter-form {
@@ -817,10 +837,6 @@ body {
   max-height: 48px;
 }
 
-.cost-figure:focus {
-  border: 3px solid #83B3D3;
-}
-
 .box {
   margin-right: 2px;
 }
@@ -861,6 +877,11 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  display: block;
+}
+
+.cost-figure:focus {
+  border: 3px solid #83B3D3;
 }
 
 .figure {
@@ -895,7 +916,7 @@ body {
   display: flex;
   padding: 14px 12px;
   width: 48px;
-  max-height: 48px;
+  height: 48px;
   justify-content: center;
   align-items: center;
 }
@@ -952,7 +973,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   width: 292px;
-  max-height: 49px;
+  height: 49px;
   padding: 14px 20px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
