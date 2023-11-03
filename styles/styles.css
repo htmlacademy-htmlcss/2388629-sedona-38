@@ -530,15 +530,16 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  align-items: center
+  align-items: center;
+  background-color: #756157;
 }
 
-.navigation-link.come-here:hover,
-.navigation-link.come-here:focus {
+.come-here:hover,
+.come-here:focus {
   background-color: #57463d;
 }
 
-.navigation-link.come-here:active {
+.come-here:active {
   opacity: 0.5;
   color: #756157;
 }
@@ -848,9 +849,60 @@ body {
 }
 
 .control-input {
-  width: 20px;
+  display: none;
+  /* width: 20px;
   max-height: 20px;
-  margin: 0;
+  margin: 0; */
+}
+
+.input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.input::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.control-input:checked + .input::before {
+  opacity: 1;
+}
+
+.radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.radio::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.control-input:checked + .radio::before {
+  opacity: 1;
 }
 
 .row {
@@ -921,6 +973,9 @@ body {
   align-items: center;
 }
 
+.button-cards:active {
+  border-color: #000000;
+}
 
 .button-light:active {
   border-radius: 4px;
