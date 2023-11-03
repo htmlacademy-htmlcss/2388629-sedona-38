@@ -869,14 +869,27 @@ body {
   position: absolute;
   display: block;
   background-color: #3F5E72;
-  border-radius: 50%;
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+  z-index: 1;
 }
 
-.control-input:checked + .input::before {
+.input::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/catalog/icons/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+.control-input:checked + .input::after {
   opacity: 1;
 }
 
@@ -899,9 +912,23 @@ body {
   right: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+  z-index: 1;
 }
 
-.control-input:checked + .radio::before {
+.radio::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/catalog/icons/radio.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+.control-input:checked + .radio::after {
   opacity: 1;
 }
 
