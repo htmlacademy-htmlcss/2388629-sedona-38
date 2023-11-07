@@ -60,8 +60,8 @@ body {
 
 .page-footer {
   background-color: #ffffff;
-  max-width: 1200px;
-  max-height: 120px;
+  width: 1200px;
+  min-height: 120px;
 }
 
 .page-header {
@@ -227,7 +227,7 @@ body {
   text-align: center;
   margin: 0;
   width: 620px;
-  min-height: 72px;
+  min-height: 49px;
 }
 
 .found {
@@ -496,6 +496,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
@@ -512,6 +513,16 @@ body {
   min-height: 52px;
 }
 
+.button-hotel:hover,
+.button-hotel:focus {
+  background-color: #4e3e36;
+}
+
+.button-hotel:active {
+  color: #756157;
+  opacity: 0.5;
+}
+
 .come-here {
   display: flex;
   width: 160px;
@@ -520,18 +531,20 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  align-items: center
+  align-items: center;
+  background-color: #756157;
+  text-decoration: none;
 }
 
-/* .come-here:hover,
+.come-here:hover,
 .come-here:focus {
-  background-color: #57463d;
+  background-color: #4e3e36;
 }
 
 .come-here:active {
   opacity: 0.5;
-  color: #FFFFFF;
-} */
+  color: #756157;
+}
 
 .subscription {
   background-image: url("../images/index/Subscribe.jpg");
@@ -621,6 +634,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
@@ -628,6 +642,16 @@ body {
   border-radius: 0 4px 4px 0;
   width: 232px;
   min-height: 52px;
+}
+
+.subscribe:hover,
+.subscribe:focus {
+  background-color: #5686a7;
+}
+
+.subscribe:active {
+  color: #82B3D3;
+  opacity: 0.5;
 }
 
 .newsletter-form {
@@ -786,11 +810,8 @@ body {
   margin: 0;
 }
 
-/* .subject {
-  margin-left: 15px;
-} */
-
-.flex-pagination {
+.flex-radio,
+.flex-checkbox {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
@@ -799,15 +820,18 @@ body {
   padding-bottom: 16px;
 }
 
-.flex-pagination:nth-child(4) {
+.flex-radio:nth-child(4),
+.flex-checkbox:nth-child(4) {
   padding-bottom: 0;
 }
 
-.flex-pagination:hover {
+.flex-radio:hover,
+.flex-checkbox:hover {
   opacity: 0.6;
 }
 
-.flex-pagination:active {
+.flex-radio:active,
+.flex-checkbox:active {
   opacity: 0.3;
 }
 
@@ -815,10 +839,6 @@ body {
   display: flex;
   width: 143px;
   max-height: 48px;
-}
-
-.cost-figure:focus {
-  border: 3px solid #83B3D3;
 }
 
 .box {
@@ -832,9 +852,91 @@ body {
 }
 
 .control-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.input {
+  display: inline-block;
   width: 20px;
-  max-height: 20px;
-  margin: 0;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.input::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #3F5E72;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.input::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/catalog/icons/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+.control-input:checked + .input::after {
+  opacity: 1;
+}
+
+.radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.radio::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.radio::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/catalog/icons/radio.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+.control-input:checked + .radio::after {
+  opacity: 1;
 }
 
 .row {
@@ -861,6 +963,11 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  display: block;
+}
+
+.cost-figure:focus {
+  border: 3px solid #83B3D3;
 }
 
 .figure {
@@ -895,23 +1002,16 @@ body {
   display: flex;
   padding: 14px 12px;
   width: 48px;
-  max-height: 48px;
+  height: 48px;
   justify-content: center;
   align-items: center;
 }
 
-
-.button-light:active {
-  border-radius: 4px;
-  border: 2px solid #83B3D3;
-}
-
-.button-light:hover {
-  border-radius: 4px;
+.button-cards {
   border: 2px solid #000000;
 }
 
-.button-light:focus {
+.button-light:hover {
   border-radius: 4px;
   border: 2px solid #000000;
 }
@@ -951,12 +1051,16 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
   width: 292px;
-  max-height: 49px;
+  min-height: 49px;
   padding: 14px 20px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
-  appearance: none
+  appearance: none;
+  background-image: url(../images/catalog/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 94%, 50%;
 }
 
 .select-control:focus,
@@ -969,10 +1073,6 @@ body {
   display: flex;
   gap: 8px;
 }
-
-/* .button-cards {
-  border: 2px solid #000000;
-} */
 
 .product-list {
   list-style-type: none;
@@ -1068,6 +1168,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
   background-color: #82B3D3;
   color: #ffffff;
   border: 1px solid #82B3D3;
@@ -1090,8 +1192,6 @@ body {
   background-color: #7DB54F;
   border: 1px solid #7DB54F;
   border-radius: 4px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .button-green:hover,
@@ -1144,6 +1244,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   margin: 0;
   border: 1px solid #F2F2F2;
@@ -1152,6 +1253,10 @@ body {
   width: 140px;
   min-height: 37px;
   padding: 9px 22px 8px 23px;
+}
+
+.rating-numbers {
+  padding-left: 6px;
 }
 
 .pagination {
