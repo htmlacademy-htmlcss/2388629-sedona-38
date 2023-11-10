@@ -1247,6 +1247,17 @@ body {
   margin: 0;
 }
 
+.product-card-title:hover,
+.product-card-title:focus {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.product-card-title:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
 .product-card-link-header {
   text-decoration: none;
   text-align: start;
