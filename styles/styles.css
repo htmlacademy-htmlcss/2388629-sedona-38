@@ -2047,35 +2047,31 @@ body {
   line-height: 20px;
   padding: 19px 20px 20px 20px;
   position: absolute;
-  top: 23px;
-  right: -116px;
+  top: 34px;
+  right: 43px;
   margin-top: 18px;
 }
 
 .modal-arrow {
-  background-image: url(../images/modal/triangle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 19px;
   height: 9px;
   display: block;
   position: absolute;
-  top: 32px;
-  right: 4px;
+  top: 33px;
+  right: 162px;
 }
 
 .modal-svg {
-  background-image: url(../images/modal/group_20.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 26px;
   height: 26px;
+  border: 0 none;
+  border-radius: 50%;
   display: block;
   position: absolute;
   top: 11px;
-  left: 59px
+  left: 59px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .arrival {
@@ -2087,6 +2083,35 @@ body {
   min-height: 48px;
   border: 0 none;
   cursor: pointer;
+}
+
+.modal-svg:hover + .popover + .popover {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.modal-svg:hover + .modal-arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.modal-svg:focus + .popover + .popover {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.modal-svg:focus + .modal-arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.popover {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .forward-button {
