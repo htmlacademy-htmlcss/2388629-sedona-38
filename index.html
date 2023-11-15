@@ -252,13 +252,13 @@
             <div class="modal-counter">
               <div class="modal-adults">
                 <label class="modal-text-item" for="adults">Взрослые:</label>
-                <button class="back-button" type="button"><span class="back"></span></button>
+                <button class="back-button" type="button" ><span class="back"></span></button>
                 <input class="modal-text-list-number" type="number" id="adults" value="2" name="adults">
                 <button class="forward-button" type="button"><span class="forward"></span></button>
               </div>
               <div class="modal-children">
                 <label class="modal-text-item children" for="children">Дети:
-                  <button class="modal-svg">
+                  <button class="modal-svg" type="button" aria-labelledby="tooltip-label-date">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewbox="0 0 26 26">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
                       <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
@@ -276,7 +276,7 @@
                       </defs>
                     </svg>
                   </span>
-                  <p class="modal-text-content popover">Укажите количество
+                  <p class="modal-text-content popover" id="tooltip-label-date">Укажите количество
                     детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </p>
                 </label>
