@@ -1163,8 +1163,8 @@ body {
   opacity: 0.6;
 }
 
-.radio:focus,
-.checkbox:focus {
+.control-input:focus ~ .checkbox,
+.control-input:focus ~ .radio {
   outline: 3px solid #83B3D3;
 }
 
