@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -1327,7 +1327,7 @@ body {
   display: block;
   width: 16px;
   height: 16px;
-  background: url(../images/catalog/icons/checkbox.svg);
+  background: url("../images/catalog/icons/checkbox.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
   position: absolute;
@@ -1370,7 +1370,7 @@ body {
   display: block;
   width: 16px;
   height: 16px;
-  background: url(../images/catalog/icons/radio.svg);
+  background: url("../images/catalog/icons/radio.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
   position: absolute;
@@ -1529,7 +1529,7 @@ body {
 }
 
 .select-icon {
-  background-image: url(../images/catalog/icons/arrow.svg);
+  background-image: url("../images/catalog/icons/arrow.svg");
   background-repeat: no-repeat;
   background-position: 94%, 50%;
   background-size: 12px 9px;
@@ -1969,7 +1969,7 @@ body {
 }
 
 .close {
-  background-image: url(../images/modal/cross.svg);
+  background-image: url("../images/modal/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2028,7 +2028,7 @@ body {
 }
 
 .modal-date-svg {
-  background-image: url(../images/modal/date.svg);
+  background-image: url("../images/modal/date.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2199,7 +2199,7 @@ body {
 }
 
 .back {
-  background-image: url(../images/modal/button-minus.svg);
+  background-image: url("../images/modal/button-minus.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2214,7 +2214,7 @@ body {
 }
 
 .forward {
-  background-image: url(../images/modal/button-plus.svg);
+  background-image: url("../images/modal/button-plus.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
