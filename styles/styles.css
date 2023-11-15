@@ -327,18 +327,17 @@ body {
   margin: 0;
 }
 
-.container-advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 400px;
-  min-height: 385px;
-}
-
 .advantages-list {
   padding: 0;
   list-style-type: none;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-width: 400px;
+  min-height: 385px;
 }
 
 .advantages-item {
@@ -495,6 +494,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -521,7 +529,7 @@ body {
 
 .features-housing {
   margin-top: 1px;
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .features-food {
@@ -586,11 +594,18 @@ body {
 }
 
 .housing {
-  padding-top: 3px;
+  padding-bottom: 29px;
+  padding-top: 29px;
 }
 
 .food {
-  padding-top: 2px;
+  padding-bottom: 29px;
+  padding-top: 29px;
+}
+
+.souvenirs {
+  padding-bottom: 29px;
+  padding-top: 29px;
 }
 
 .features-description {
@@ -1168,6 +1183,8 @@ body {
   border-radius: 2px;
   top: 90%;
   left: 41%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
